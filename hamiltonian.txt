@@ -1,0 +1,26 @@
+#include<stdio.h>
+int main()
+{
+    int num,a[10];
+    int i,k,j,c=0;
+    scanf("%d",&num);
+    for(i=0;i<num;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+    for(k=0;k<num;k++)
+    {
+        for(j=k;j<num;j++)
+        {
+           if(a[k]<a[j])
+           c++;
+        }   
+         if(c==0)
+           {
+               printf("%d ",a[k]);
+           }
+           c=0;
+    }
+    
+    
+}
